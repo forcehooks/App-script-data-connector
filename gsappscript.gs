@@ -29,7 +29,7 @@ function deleteToken() {
 };
 
 function setToken() {
-  var response = ui.prompt("❌Please provide your API Token.If you have api access you can find it in setting section of our web app❌", ui.ButtonSet.OK_CANCEL);
+  var response = ui.prompt("❌Please provide your API Key. If you have API access you can find it in the settings section of our web app❌", ui.ButtonSet.OK_CANCEL);
   if (response.getSelectedButton() == ui.Button.OK) {
     var apiToken = response.getResponseText();
     if (validateToken(apiToken)) {
